@@ -1,0 +1,100 @@
+
+/* body secton */
+/* first div for grid veiw of the videos */
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    padding: 4px 15px;
+    background-color: white;
+}
+
+@media (max-width:630px){
+    .video-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (min-width:630px) and (max-width:890px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:890px) and (max-width:1150px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* nested div for thumnail picture  */
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+}
+.video-time{
+    position: absolute;
+    right: 4px;
+    bottom: 12px; 
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 2px 4px;
+}
+/* image div for thumbnail */
+.thumbnail{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* nested div for channel picture and text  */
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+}
+/* inner nested div for only channel picture */
+.channel-picture{
+     width: 36px;
+}
+/* image div for channel picture */
+.channel{
+    border-radius: 50px;
+    width: 36px;
+
+}
+/* inner nested div for only text decoration */
+.video-info{
+    width: 200px;
+}
+/* paragraph tag for video title */
+.video-title{
+    width: 100%;
+    text-size-adjust: 100%;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+/* paragraph tag for video author */
+.video-author, .video-stats {
+    color: #606060;
+    font-size: 12px;
+}
+/* paragraph tag for video stats */
+.video-author{
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+/* footer section */
+
+footer{
+    text-align: center;
+}
